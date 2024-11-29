@@ -26,8 +26,15 @@ class Info(Function, Run):
             bot_qq_account_uid = int(json['bot_qq_account_uid'])
             owner_qq_account_uid = int(json['owner_qq_account_uid'])
             managers_qq_account_uid = list(str(i) for i in iter(json['managers_qq_account_uid']))
-            bot_nickname = requests.post(url, {'user_id': bot_qq_account_uid}, timeout=5).json().get('data').get('nickname')
-            owner_nickname = requests.post(url, {'user_id': owner_qq_account_uid}, timeout=5).json().get('data').get('nickname')
+            
+            try:
+                bot_nickname = requests.post(url, {'user_id': bot_qq_account_uid}, timeout=5).json().get('data').get('nickname')
+            except:
+                bot_nickname = None
+            try:
+                owner_nickname = requests.post(url, {'user_id': owner_qq_account_uid}, timeout=5).json().get('data').get('nickname')
+            except:
+                owner_nickname = None
 
             docs = f"嗨，{data.get('sender').get('nickname')}，你好！ ξ( ✿＞◡❛)\n\n"
             
