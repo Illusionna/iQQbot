@@ -1,9 +1,0 @@
-{
-    "http_app_host": "127.0.0.1",
-    "http_app_port": 4444,
-    "http_service_listening_socke": "127.0.0.1:3000",
-    "bot_name": "momo",
-    "bot_qq_account_uid": -1,
-    "owner_qq_account_uid": -1,
-    "managers_qq_account_uid": []
-}
