@@ -1,0 +1,9 @@
+{
+    "http_app_host": "127.0.0.1",
+    "http_app_port": 4444,
+    "http_service_listening_socke": "127.0.0.1:3000",
+    "bot_name": "(⊙o⊙)",
+    "bot_qq_account_uid": 39xxxx78,
+    "owner_qq_account_uid": 35xxxx29,
+    "managers_qq_account_uid": [20xxxx62]
+}
