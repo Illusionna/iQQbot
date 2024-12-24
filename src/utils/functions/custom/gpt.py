@@ -54,6 +54,7 @@ class GPT(Function, Run):
 
     @staticmethod
     def gpt_count_unknown(msg: str) -> str:
+        # 别偷看我的 git 提交记录  : )
         openai.api_key = 'sk-welLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXCb8364'
         openai.base_url = 'https://free.v36.cm/v1/'
         openai.default_headers = {'x-foo': 'true'}
