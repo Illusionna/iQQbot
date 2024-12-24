@@ -10,7 +10,8 @@ class GPT(Function, Run):
     permission = 3
 
     client = OpenAI(
-        api_key = 'sk-6kRLYgpRefkCnH4s4HJdeuf4um2Le6dwA82YZt8DFZR14eUI',
+        # 忘记删除我的密码了，笑死，这里改成你的 openai 账号和密码.
+        api_key = 'sk-6kRLYXXXXXXXXXXXXXXXXXXXXXXXXXt8DFZR14eUI',
         base_url = 'https://api.chatanywhere.tech/v1'
     )
 
@@ -53,7 +54,7 @@ class GPT(Function, Run):
 
     @staticmethod
     def gpt_count_unknown(msg: str) -> str:
-        openai.api_key = 'sk-welL0TbDIEJgGGys5aCd19647f524f2b9cB5A2E165Cb8364'
+        openai.api_key = 'sk-welLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXCb8364'
         openai.base_url = 'https://free.v36.cm/v1/'
         openai.default_headers = {'x-foo': 'true'}
         completion = openai.chat.completions.create(
